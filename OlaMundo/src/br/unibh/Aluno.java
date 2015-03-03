@@ -45,7 +45,17 @@ public class Aluno extends Pessoa {
 				+ super.toString();
 	}
 
-
+	public static Boolean verificaMatricula (String matricula){
+		if (matricula == null){
+			return false;
+		}else if (matricula.trim().equals ("")){
+			return false;
+		}else if (matricula.length()!=8 ){
+			return false;
+		} else  {
+			return true;
+		}
+	}
 	
 	
 

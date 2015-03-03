@@ -22,6 +22,12 @@ public class OlaMundo {
 	Professor p1 = new Professor("Humberto Cruvinel", "982354875", new BigDecimal("9587"));
 
 	Professor p2 = new Professor("Humberto Cruvinel", "982354875");
+	
+	System.out.println("CPF =====" + p1.getCpf());
+	System.out.println("BONUS ==========" + Professor.BONUS);
+	
+	System.out.println(Aluno.verificaMatricula("12345678"));
+	
 	System.out.println(a1);
 	System.out.println(a2);
 	System.out.println(p1);
