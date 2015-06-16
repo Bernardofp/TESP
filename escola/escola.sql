@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 14, 2015 at 03:55 AM
+-- Generation Time: Apr 28, 2015 at 05:16 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS `tb_aluno` (
 INSERT INTO `tb_aluno` (`dataAniversario`, `matricula`, `id`) VALUES
 ('1991-07-24', 21, 1),
 ('1992-07-24', 22, 2),
-('1993-07-24', 23, 3);
+('2015-04-06', 23, 9);
 
 -- --------------------------------------------------------
 
@@ -95,16 +95,19 @@ CREATE TABLE IF NOT EXISTS `tb_pessoa` (
   `nome` varchar(100) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UK_5yk299a77740w681hxx04j7b3` (`cpf`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `tb_pessoa`
 --
 
 INSERT INTO `tb_pessoa` (`id`, `cpf`, `nome`) VALUES
-(1, '10299955522', 'indiana jones'),
-(2, '10299955533', 'reitor'),
-(3, '10299955544', 'cain');
+(1, '102.999.555-22', 'indiana jones'),
+(2, '102.999.555-33', 'reitor'),
+(4, '123.123.123.14', 'Joao Valentao'),
+(5, '123.123.123-12', 'Joana'),
+(9, '123.123.123-15', 'Tainara'),
+(10, '123.123.123-16', 'Ian Thompson');
 
 -- --------------------------------------------------------
 
@@ -124,9 +127,9 @@ CREATE TABLE IF NOT EXISTS `tb_professor` (
 --
 
 INSERT INTO `tb_professor` (`salario`, `id`) VALUES
-('1550.00', 1),
-('2650.00', 2),
-('4750.00', 3);
+('2650.00', 4),
+('4345.67', 5),
+('1234.56', 10);
 
 --
 -- Constraints for dumped tables
